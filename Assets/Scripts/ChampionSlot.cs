@@ -6,7 +6,7 @@ public class ChampionSlot : MonoBehaviour {
 
     public GameObject champ;
 
-    public void SpawnChamp()
+    public void OnMouseUp()
     {
         Instantiate(champ, transform.position, transform.rotation);
     }
