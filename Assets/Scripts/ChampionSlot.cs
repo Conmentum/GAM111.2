@@ -9,6 +9,10 @@ public class ChampionSlot : MonoBehaviour {
     public void OnMouseUp()
     {
         Instantiate(champ, transform.position, transform.rotation);
+        if (champ == null)
+        {
+            return;
+        }
     }
 	// Use this for initialization
 	void Start () {
