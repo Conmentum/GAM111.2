@@ -2,9 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MagicSlot : MonoBehaviour {
-
-    public GameObject activeSpell;
+public class DeckManager : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
@@ -12,7 +10,7 @@ public class MagicSlot : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update() { 
-
+	void Update () {
+		
 	}
 }

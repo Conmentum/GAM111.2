@@ -9,14 +9,14 @@ public class ChampionSlot : MonoBehaviour {
     public void OnMouseUp()
     {
         Instantiate(champ, transform.position, transform.rotation);
+
+    }
+	// Use this for initialization
+	void Start () {
         if (champ == null)
         {
             return;
         }
-    }
-	// Use this for initialization
-	void Start () {
-		
 	}
 	
 	// Update is called once per frame
