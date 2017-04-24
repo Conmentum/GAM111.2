@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class SpellDeck : MonoBehaviour {
-	public GameObject[] spellsIn_Deck;
+	public List<GameObject> spellsIn_Deck;
 
 	// Use this for initialization
 	void Start () {
@@ -13,5 +13,10 @@ public class SpellDeck : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		
+	}
+	public void AddSpell(GameObject _New){
+	}
+
+	public void SpellDrawn(GameObject _Drawn){
 	}
 }
