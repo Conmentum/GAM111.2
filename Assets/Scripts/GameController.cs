@@ -27,28 +27,22 @@ public class GameController : MonoBehaviour {
     // Use this for initialization
     void Start () {
         summoner_StonesCount = 0;
-        champ_SelectionUI.SetActive(true);
-        spell_SelectionUI.SetActive(false);
         General_UI.SetActive(false);
+
+		turnState = TurnStates.Building;
     }
 	
 	// Update is called once per frame
 	void Update () {
-		if (curSpell_Cards >= maxSpell_Cards)
-        {
-            //display done button
-        }
+		
 	}
-    void AddChampsToDeck()
+    public void StartGame()
     {
-
-    }
-    void AddSpellsToDeck()
-    {
-        //Takes the selected cards and adds them to the SpellDeck
-    } 
+		turnState = TurnStates.Draw;
+	} 
     public enum TurnStates
     {
+		Building,
         Start,
         Draw,
         Wait,

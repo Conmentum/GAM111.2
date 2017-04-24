@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class SpellCard_selection : MonoBehaviour {
-    public int uniqueSpell_Identifier;
+	public GameObject uniqueSpell_Identifier;
     public Text spellCard_Name;
     public Text cardType_Text;
     public bool addTo_Deck;
